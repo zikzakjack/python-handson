@@ -6,11 +6,13 @@ z1 = x / y
 print('x * y = ' + str(z))
 print('x / y = ' + str(z1))
 
+
 # 2. Create a as 2000 and find the division of a by y (created in step 1) and reassign a with the divided result (200).
 a = 2000
 ay = a / y
 a = ay
 print('a / y = ' + str(a))
+
 
 # 3. Prove Python is Dynamically Typed Language: Create x:int=100, then assign the x to y,
 # but the datatype of y has to be of type string. (think about using some function like str()).
@@ -21,9 +23,11 @@ print('Before Assignment -> type(x) : ' + str(type(x)) + ' & type(yy) : ' + str(
 yy = x
 print('After Assignment -> type(x) : ' + str(type(x)) + ' & type(yy) : ' + str(type(yy)))
 
+
 # 4. Prove Python has dynamic inference feature
 price = 500.99
 print('DataType of price is dynamically inferred as ' + str(type(price)))
+
 
 # 5. Prove Python is Strongly Typed Language
 items = '5'
@@ -34,6 +38,7 @@ items = '5'
 """
 print('Strong typing indicates that the type matters when performing operations on a variable. ')
 
+
 # 6. Create variables a,b,c,d assigned with 10,20,30,40 respectively
 a, b, c, d = 10, 20, 30, 40
 print('a = ' + str(a))
@@ -41,9 +46,11 @@ print('b = ' + str(b))
 print('c = ' + str(c))
 print('d = ' + str(d))
 
+
 # 7. Prove Python variables are case sensitive
 PRICE = ' its a costly deal'
 print('price and PRICE are different -> type(price) : ' + str(type(price)) + ' & type(PRICE) : ' + str(type(PRICE)))
+
 
 # 8. Prove variable name can’t start with numbers or cannot contains special character other than _
 
@@ -65,6 +72,7 @@ var_ = 'one'
 _var = 'one'
 print('var_ = ' + var_ + ' _var = ' + _var)
 
+
 # 9. Show some examples of when do we use single, double and triple (single/double) quotes
 mystringliteral1 = "this is a string with 'quotes'"
 mystringliteral2 = 'this is a string with "quotes"'
@@ -81,6 +89,7 @@ print(mystringliteral4)
 print(mystringliteral5)
 print(mystringliteral6)
 print(mystringliteral7)
+
 
 # 10. Show an examples to use arithmetic, comparison, relational and logical operators.
 print('Python Arithmetic Operators')
@@ -105,6 +114,7 @@ print('a > 5 and a < 10 ' + str(a > 5 and a < 10))
 print('a > 5 or a < 10 ' + str(a > 5 or a < 10))
 print('not(a > 5 and a < 10) ' + str(not (a > 5 and a < 10)))
 
+
 # 11. Write a program to find the greatest of 3 numbers
 print('Write a program to find the greatest of 3 numbers')
 a = float(input("Enter first number: "))
@@ -118,6 +128,7 @@ else:
     greatest = c
 print("The largest number is", greatest)
 
+
 # 12. Write a single program to find the given number is even or whether it is negative
 # and print the output as (the given number is even but not negative or the given number is not even
 # but negative or the given number is neither negative nor even)
@@ -129,6 +140,7 @@ elif ((num % 2) != 0) and (num < 0):
     print('the given number is not even but negative')
 else:
     print('the given number is neither negative nor even')
+
 
 # 13. Write a nested if then else to print the course fees - check if student choosing bigdata, then fees is 25000,
 # if student choosing spark then fees is 15000, if the student choosing datascience then check if machinelearning then 25000 or
@@ -147,6 +159,8 @@ elif (course == 'datascience'):
     elif (specilisation == 'both'):
         fees = 25000 + 25000
 print(course + ' Course fees is ' + str(fees))
+
+
 # 14. Check whether the given string is palindrome or not (try to use some function like reverse).
 # For eg: x="madam" and y=”madam”, if x matches with y then print as "palindrome" else "not a  palindrome".
 print("palindrome check")
@@ -157,11 +171,22 @@ if word == reversedWord:
 else:
     print(word + ' is not a palindrome.')
 
+
 # 15. Check whether the val x=100 is an integer or string.
 # (try to use some functions like str or upper function etc to execute this use case)
 # or use isinstanceof(variablename,datatype) function.
 newWord = "hello guys"
 if isinstance(newWord, str):
     print(newWord.upper())
-else
+else:
     print(newWord + 10)
+
+
+# 16. Create a list with a range of 10 values starting from 2 to 11 and prove mutability by updating the
+# 3rd element with 100 and prove resizable properties by adding 100 in the 5th position.
+
+nos = list(range(2,12))
+print(nos)
+nos[2] = 100
+nos.insert(4, 100)
+print(nos)
