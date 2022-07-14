@@ -190,3 +190,17 @@ print(nos)
 nos[2] = 100
 nos.insert(4, 100)
 print(nos)
+
+
+# 17. Create a tuple of 2 fields eg. ("Inceptez","Technologies","Pvt","Ltd"),
+# prove immutability and non resizable nature, access the 2nd and 4th fields and store in another tuple.
+
+tup = ("Inceptez","Technologies","Pvt","Ltd")
+## Immutable. Below assignment wont work
+# tup[1] = "Consultancy"
+# Tuples are unchangeable, meaning that we cannot change, add or remove items after the tuple has been created. Below line wont work
+# tup.__add__("hi")
+new_tup = tuple((tup[1], tup[3]))
+print(tup)
+print(new_tup)
+
