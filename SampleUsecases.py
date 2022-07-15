@@ -145,6 +145,7 @@ else:
 # 13. Write a nested if then else to print the course fees - check if student choosing bigdata, then fees is 25000,
 # if student choosing spark then fees is 15000, if the student choosing datascience then check if machinelearning then 25000 or
 # if deep learning then 45000 otherwise if both then 25000+25000.
+fees = -1
 course = input("Which course are you enrolling (bigdata | spark | datascience )")
 if (course == 'bigdata'):
     fees = 25000
@@ -573,7 +574,6 @@ def usecase32(times, no):
 # perform either addition or subraction or multiplication or division respectively of argument 1 and 2
 # then return the result to the calling environment.
 # Create a default argument function to handle “if the 3rd argument is not passed then default it to add”.
-
 def calculator(operand1, operand2, operation='add'):
     if (operation == 'add'):
         return  operand1 + operand2
@@ -583,6 +583,8 @@ def calculator(operand1, operand2, operation='add'):
         return  operand1 / operand2
     elif (operation == 'mul'):
         return  operand1 * operand2
+    elif (operation == 'all'):
+        return  operand1 + operand2, operand1 - operand2, operand1 * operand2, operand1 / operand2
 
 
 if __name__ == '__main__':
@@ -608,3 +610,4 @@ if __name__ == '__main__':
     usecase32(10, 3)
     print(calculator(10, 20, 'mul'))
     print(calculator(10, 20))
+    print(calculator(10, 3, 'all'))
