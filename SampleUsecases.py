@@ -360,3 +360,16 @@ for no in nos:
 print('even nos : ' + str(even_lst))
 print('odd nos : ' + str(odd_lst))
 
+
+# 27. Write a while loop to loop from 0 till 21 with the increment of 3,
+# the result should be exactly 3,6,9,12,15,18 and store this result in a list
+
+num_list = []
+num = 0
+while (num < 21):
+    num = num + 3
+    num_list.append(num)
+    if (num >= 18):
+        break
+print(num_list)
+
