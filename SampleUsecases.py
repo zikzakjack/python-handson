@@ -272,6 +272,29 @@ lst.remove(20)
 print(lst)
 
 
+# 23. Do the above same (step 22) operation in the tuple of elements tup=(10,20,40,30,20)
+
+tup = (10, 20, 40, 30, 20)
+print("length of the list = " + str(len(tup)))
+print("first value = " + str(tup[0]))
+print("first value = " + str(tup[len(tup) - 1]))
+tup = tuple(sorted(tup))
+print(tup)
+tup = tuple(sorted(tup, reverse=True))
+print(tup)
+print("min value in the list = " + str(min(tup)))
+print("max value in the list = " + str(max(tup)))
+print("sum of  the list = " + str(sum(tup)))
+lst = list(tup)
+lst.remove(30)
+tup = tuple(lst)
+print(tup)
+lst = list(tup)
+lst.remove(20)
+tup = tuple(lst)
+print(tup)
+
+
 # 24. Convert the string to list from str1="Inceptez Technologies Pvt Ltd" to lst_str1=['Inceptez', 'Technologies', 'Pvt', 'Ltd']
 
 str1="Inceptez Technologies Pvt Ltd"
