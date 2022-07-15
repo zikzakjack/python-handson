@@ -229,3 +229,10 @@ print(lst)
 set = set()
 set.update(lst)
 print(set)
+
+
+# 20. Append ("Intel","Corp") in the above de duplicated list
+
+set.add( ("Intel","Corp"))
+print(set)
+
