@@ -413,3 +413,17 @@ while (counter >= 1):
     print("Inceptez technologies")
     counter = counter -1
 
+
+# 31. From the given list of list of elements produce the following output using nested for loop
+# lst1=[[10,20],[30,40,50],[60,70,80]], calculate the sum of all number, calculate the min value and the max value of all the elements in the lst1.
+
+full_list = []
+lst1=[[10,20],[30,40,50],[60,70,80]]
+for list in lst1:
+    for item in list:
+        full_list.append(item)
+print(full_list)
+print("min value in the list = " + str(min(full_list)))
+print("max value in the list = " + str(max(full_list)))
+print("sum of  the list = " + str(sum(full_list)))
+
