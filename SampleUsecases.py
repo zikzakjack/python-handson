@@ -236,3 +236,17 @@ print(set)
 set.add( ("Intel","Corp"))
 print(set)
 
+
+# 21. Convert the lst_dict= [{"Inceptez":"Technologies"},{"Apple":"Incorporation"}] to lst1=["Inceptez","Apple"] ,
+# think about using for loop, list() function, keys function and list append functions to achieve this.
+
+lst_dict= [{"Inceptez":"Technologies"},{"Apple":"Incorporation"}]
+print(lst_dict)
+lst_keys = []
+
+for dict in lst_dict:
+    for dict_key in dict.keys():
+        lst_keys.append(dict_key)
+print(lst_keys)
+
+
