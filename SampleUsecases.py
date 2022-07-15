@@ -401,3 +401,15 @@ for sal in sal_lst:
 print(sal_bon_lst)
 print(sal_bon_filter_lst)
 
+
+# 30. Write a do while loop to print “Inceptez technologies” n number of times as per the input you get from the user.
+# Minimum it has to be printed at least one time regardless of the user input.
+
+counter = 1
+ip = input("Enter no of times : ")
+if (int(ip) > 1):
+    counter = int(ip)
+while (counter >= 1):
+    print("Inceptez technologies")
+    counter = counter -1
+
