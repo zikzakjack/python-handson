@@ -279,3 +279,43 @@ print(str1)
 lst_str1 = str1.split(" ")
 print(lst_str1)
 
+
+# 25. With the below given data in the format of list(list(elements))
+# emplstlst= [["1", ("Arun","Kumar"), "10000"],["2", ("Bala","Mohan"), "12000"]]
+#
+# Display the below output for all of the 5 given simple scenarios
+# a. Convert the first element of the above list into tuple
+# ("1", ("Arun","Kumar"), "10000")
+# b. Print the second element's second element and reverse the first and last name as given below
+# ("Mohan","Bala")
+# c. Convert the emplstlst into tuples(tuples)
+# emplstlst= (("1", ("Arun","Kumar"), "10000"),("2", ("Bala","Mohan"), "12000"))
+# d. Add all salary of the above list
+# 22000
+
+emplstlst= [["1", ("Arun","Kumar"), "10000"],["2", ("Bala","Mohan"), "12000"]]
+print(emplstlst)
+# a. Convert the first element of the above list into tuple
+for emplst in emplstlst:
+    tup = tuple(emplst)
+    print(tup)
+
+# b. Print the second element's second element and reverse the first and last name as given below
+for emplst in emplstlst:
+    tup = tuple(emplst)
+    print(tuple([emplst[1][1], emplst[1][0]]))
+
+# c. Convert the emplstlst into tuples(tuples)
+tuplesList = []
+tuplesOfTuples = tuple()
+for emplst in emplstlst:
+    tup = tuple(emplst)
+    tuplesList.append(tup)
+print(tuple(tuplesList))
+
+# d. Add all salary of the above list
+total_sal = 0
+for emplst in emplstlst:
+    total_sal = total_sal + int(emplst[2])
+print(total_sal)
+
