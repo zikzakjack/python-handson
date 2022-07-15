@@ -342,3 +342,21 @@ for emplst in emplstlst:
     total_sal = total_sal + int(emplst[2])
 print(total_sal)
 
+
+# Control Statements
+
+# 26. Write a program using for loop to print even numbers and odd numbers in the below range of data
+# (generate using range function) [5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]
+# output should be with even as 6,8,10,12,14,16,18,20 and odd as 5,7,9,11,13,15,17,19.
+
+nos = range(5, 21)
+even_lst = []
+odd_lst = []
+for no in nos:
+    if (no % 2 == 0):
+        even_lst.append(no)
+    else:
+        odd_lst.append(no)
+print('even nos : ' + str(even_lst))
+print('odd nos : ' + str(odd_lst))
+
