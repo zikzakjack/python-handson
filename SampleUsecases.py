@@ -250,3 +250,24 @@ for dict in lst_dict:
 print(lst_keys)
 
 
+# 22. Create a list of values lst=[10,20,40,30,20], find the first, last values of the list,
+# sort the list in ascending order, sort in descending order,
+# print the minumum and maximum values of the descending sorted list,
+# find the sum of all elements in the list, remove the number 30 and 20 from the list.
+
+lst=[10,20,40,30,20]
+print("length of the list = " + str(len(lst)))
+print("first value = " + str(lst[0]))
+print("first value = " + str(lst[len(lst) -1]))
+lst.sort()
+print(lst)
+lst.sort(reverse = True)
+print(lst)
+print("min value in the list = " + str(min(lst)))
+print("max value in the list = " + str(max(lst)))
+print("sum of  the list = " + str(sum(lst)))
+lst.remove(30)
+print(lst)
+lst.remove(20)
+print(lst)
+
