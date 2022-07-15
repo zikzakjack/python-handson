@@ -271,3 +271,11 @@ print(lst)
 lst.remove(20)
 print(lst)
 
+
+# 24. Convert the string to list from str1="Inceptez Technologies Pvt Ltd" to lst_str1=['Inceptez', 'Technologies', 'Pvt', 'Ltd']
+
+str1="Inceptez Technologies Pvt Ltd"
+print(str1)
+lst_str1 = str1.split(" ")
+print(lst_str1)
+
