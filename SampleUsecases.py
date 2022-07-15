@@ -373,3 +373,13 @@ while (num < 21):
         break
 print(num_list)
 
+
+# 28. Write a for or while loop to print the cube of 4, result should be 4*4*4=64
+# (initiate some variable outside the loop with 4 and loop through 3 times to achieve the result)
+
+no = 4
+result = 1
+for counter in range(1, 4):
+    result = result * no
+print(result)
+
