@@ -587,6 +587,18 @@ def calculator(operand1, operand2, operation='add'):
         return  operand1 + operand2, operand1 - operand2, operand1 * operand2, operand1 / operand2
 
 
+# 37. Create a method to accept a string like “inceptez technologies”
+# and return the following values in multiple result types (capitalize, upper case, length of the string,
+# number of words, ends with “s” or not, replace ‘e’ with ‘a’)
+# for eg. the result should be like this.. (Inceptez Technologies, INCEPTEZ TECHNOLOGIES, 21, 2, True,incaptaz tachnologias)
+def word_processor(input):
+    upper = input.upper()
+    length = len(input)
+    word_count = len(input.split())
+    end_with_s = input[len(input)-1] == 's'
+    replace_e_with_a = input.replace('e','a')
+    return input, upper, length, word_count, end_with_s, replace_e_with_a
+
 if __name__ == '__main__':
     usecase11(10, 20, 30)
     usecase11(no3 = 40, no2 = 60, no1 = 10)
@@ -611,3 +623,6 @@ if __name__ == '__main__':
     print(calculator(10, 20, 'mul'))
     print(calculator(10, 20))
     print(calculator(10, 3, 'all'))
+    result = word_processor('Inceptez Technologies')
+    print(result)
+
