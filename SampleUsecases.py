@@ -210,15 +210,22 @@ print(new_tup)
 # once the list of dictionary is arrived print only "Incorporation" by passing "Apple" as a key using dict["Apple"]
 # and dict.get("Apple") and try with dict["Apple1"] and dict.get("Apple1") then find the difference between get and using[] notation.
 
-# option 1
 tuples_list = [("Inceptez", "Technologies"), ("Apple", "Incorporation")]
 print(tuples_list)
-
 dicts_list = []
-# option 2
 for tup in tuples_list:
     print(tup)
     dict_item = {}
     dict_item[tup[0]] = tup[1]
     dicts_list.append(dict_item)
 print(dicts_list)
+
+
+# 19. Create a list of tuple as given below and delete all duplicate tuples of the list
+# lst=[("Inceptez","Technologies"),("Apple","Incorporation"),("Inceptez","Technologies"),("Inceptez","Technologies")]
+
+lst = [("Inceptez","Technologies"),("Apple","Incorporation"),("Inceptez","Technologies"),("Inceptez","Technologies")]
+print(lst)
+set = set()
+set.update(lst)
+print(set)
