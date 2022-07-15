@@ -383,3 +383,21 @@ for counter in range(1, 4):
     result = result * no
 print(result)
 
+
+# 29. Create a list as sal_lst=[10000,20000,30000,10000,15000],
+# loop through the list and add 1000 bonus to the salary and
+# store in another list sal_bonus_lst=[11000,21000,31000,11000,16000]
+# then store the bonus applied salary in another list where sal>11000
+
+sal_lst = [10000, 20000, 30000, 10000, 15000]
+sal_bon_lst = []
+sal_bon_filter_lst = []
+bonus = 1000
+for sal in sal_lst:
+    new_sal = bonus + sal
+    sal_bon_lst.append(new_sal)
+    if (new_sal > 11000):
+        sal_bon_filter_lst.append(new_sal)
+print(sal_bon_lst)
+print(sal_bon_filter_lst)
+
