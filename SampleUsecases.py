@@ -427,3 +427,16 @@ print("min value in the list = " + str(min(full_list)))
 print("max value in the list = " + str(max(full_list)))
 print("sum of  the list = " + str(sum(full_list)))
 
+
+# 32. Create a looping construct to create 3 tables upto 10 values. Output should be like this…
+# 1 x 3 = 3
+# 2 x 3 = 6
+# 3 x 3 = 9
+# .
+# .
+# 10 x 3 = 30
+
+for no in range(1, 11):
+    result = no * 3
+    print(f"{no} x 3 = {result}")
+
